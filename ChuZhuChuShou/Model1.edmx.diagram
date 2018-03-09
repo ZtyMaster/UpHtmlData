@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="542854665d334c9f880377799e4af3c3" Name="Diagram1" ZoomLevel="55">
+        <EntityTypeShape EntityType="oaModel.ActionInfo" Width="1.5" PointX="0.75" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="oaModel.BumenInfoSet" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="oaModel.Department" Width="1.5" PointX="3" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="oaModel.R_UserInfo_ActionInfo" Width="1.5" PointX="7.5" PointY="14.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="oaModel.RoleInfo" Width="1.5" PointX="0.875" PointY="17" IsExpanded="true" />
+        <EntityTypeShape EntityType="oaModel.T_BiaoJiInfo" Width="1.5" PointX="8.25" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="oaModel.T_BoolItem" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="oaModel.T_City" Width="1.5" PointX="3" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="oaModel.T_FGJHtmlData" Width="1.5" PointX="5.25" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="oaModel.T_Items" Width="1.5" PointX="3.125" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="oaModel.T_province" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="oaModel.T_QiuZhuQiuGou" Width="1.5" PointX="8.125" PointY="0.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="oaModel.T_Quyu" Width="1.5" PointX="5.25" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="oaModel.T_SaveHtmlData" Width="1.5" PointX="10.5" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="oaModel.T_SeeClickPhoto" Width="1.5" PointX="7.5" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="oaModel.T_UserClick" Width="1.5" PointX="8.5" PointY="17.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="oaModel.T_UserSave" Width="1.5" PointX="3.125" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="oaModel.T_UserSave_Items" Width="1.5" PointX="10.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="oaModel.UserInfo" Width="1.5" PointX="5.25" PointY="12.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="oaModel.UserInfo_City" Width="1.5" PointX="10.5" PointY="10.5" IsExpanded="true" />
+        <AssociationConnector Association="oaModel.FK_ActionInfoR_UserInfo_ActionInfo" ManuallyRouted="false" />
+        <AssociationConnector Association="oaModel.FK_UserInfoR_UserInfo_ActionInfo" ManuallyRouted="false" />
+        <AssociationConnector Association="oaModel.FK_T_SaveBiaoJi_BiaoJi" ManuallyRouted="false" />
+        <AssociationConnector Association="oaModel.FK_T_City_province" ManuallyRouted="false" />
+        <AssociationConnector Association="oaModel.FK_T_FGJHtmlData_T_City" ManuallyRouted="false" />
+        <AssociationConnector Association="oaModel.FK_T_Quyu_T_City" ManuallyRouted="false" />
+        <AssociationConnector Association="oaModel.FK_UserInfo_T_City" ManuallyRouted="false" />
+        <AssociationConnector Association="oaModel.FK_UserInfoT_City_CityID" ManuallyRouted="false" />
+        <AssociationConnector Association="oaModel.FK_T_SeeClickPhoto_T_FGJHtmlData" ManuallyRouted="false" />
+        <AssociationConnector Association="oaModel.FK_T_SaveHtmlData_HtmlID" ManuallyRouted="false" />
+        <AssociationConnector Association="oaModel.FK_T_SaveMasterID" ManuallyRouted="false" />
+        <AssociationConnector Association="oaModel.FK_T_SeeClickPhoto_UserInfo" ManuallyRouted="false" />
+        <AssociationConnector Association="oaModel.FK_T_UserClick_UserInfo" ManuallyRouted="false" />
+        <AssociationConnector Association="oaModel.FK_T_UserSave_T_UserSave" ManuallyRouted="false" />
+        <AssociationConnector Association="oaModel.FK_UserInfoT_City_UserInfo" ManuallyRouted="false" />
+        <AssociationConnector Association="oaModel.DepartmentActionInfo" ManuallyRouted="false" />
+        <AssociationConnector Association="oaModel.RoleInfoActionInfo" ManuallyRouted="false" />
+        <AssociationConnector Association="oaModel.UserInfoDepartment" ManuallyRouted="false" />
+        <AssociationConnector Association="oaModel.UserInfoRoleInfo" ManuallyRouted="false" />
+        <AssociationConnector Association="oaModel.FK_T_QiuZhuQiuGou_T_City" />
+        <EntityTypeShape EntityType="oaModel.T_ChuZhuInfo" Width="1.5" PointX="5.25" PointY="24.5" />
+        <EntityTypeShape EntityType="oaModel.T_YxPerson" Width="1.5" PointX="7.5" PointY="24.5" />
+        <EntityTypeShape EntityType="oaModel.T_ZhuaiJiaBak" Width="1.5" PointX="13.5" PointY="11.5" />
+        <EntityTypeShape EntityType="oaModel.UserSaveImage" Width="1.5" PointX="5.375" PointY="21.125" />
+        <AssociationConnector Association="oaModel.FK_T_CitiID" />
+        <AssociationConnector Association="oaModel.FK_fgjhID" />
+        <AssociationConnector Association="oaModel.FK_UserSaveImage_T_UserSave" />
+        <AssociationConnector Association="oaModel.FK_T_YxPerson_UserInfo" />
+        <AssociationConnector Association="oaModel.FK_UserInfo_YxPerson" />
+        <AssociationConnector Association="oaModel.FK_adduserid" />
+        <EntityTypeShape EntityType="oaModel.T_UpHerfCity" Width="1.5" PointX="13.5" PointY="15.375" />
+        <AssociationConnector Association="oaModel.FK_T_ChuZhuInfo_UserInfo" />
+        <AssociationConnector Association="oaModel.FK_T_UpHerfCity_T_City" />
+        <AssociationConnector Association="oaModel.FK_T_FGJHtmlData_Userinfo" />
+        <AssociationConnector Association="oaModel.FK_T_QiuZhuQiuGou_UserInfo" />
+        <AssociationConnector Association="oaModel.FK_T_UpHerfCity_UserInfo" />
+        <EntityTypeShape EntityType="oaModel.GongGao" Width="1.5" PointX="10.375" PointY="0.75" />
+        <EntityTypeShape EntityType="oaModel.ScrherSAVE" Width="1.5" PointX="7.5" PointY="29.375" />
+        <EntityTypeShape EntityType="oaModel.SeeQzCz" Width="1.5" PointX="10.375" PointY="19.875" />
+        <EntityTypeShape EntityType="oaModel.TLoginbak" Width="1.5" PointX="7.5" PointY="33.75" />
+        <AssociationConnector Association="oaModel.FK_ScrherSAVE_UserInfo" />
+        <AssociationConnector Association="oaModel.FK_ChuzhuID" />
+        <AssociationConnector Association="oaModel.FK_QiuzhuID" />
+        <AssociationConnector Association="oaModel.FK_UserInfo" />
+        <AssociationConnector Association="oaModel.FK_TLoginbak_UserInfo" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

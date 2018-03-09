@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<bookstore>
+  <book Type="58同城" ID="1">
+    <title>http://liaoyang.58.com/ershoufang/0</title>
+  </book>
+  <book Type="赶集网" ID="2">
+    <title>http://wap.ganji.com/liaoyang/fang5/a1</title>
+  </book>
+  <book Type="百姓网" ID="3">
+    <title>http://liaoyang.baixing.com/ershoufang/?grfy=1</title>
+  </book>
+  <book Type="安居客" ID="4">
+    <title>https://liaoyang.anjuke.com/sale/sc7/</title>
+  </book>
+</bookstore>

@@ -1,0 +1,23 @@
+﻿<Window x:Class="newWORD.log"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:newWORD"
+        mc:Ignorable="d"
+        Title="版权" Height="220" Width="300" ResizeMode="NoResize" Loaded="Window_Loaded">
+    <Grid>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="23,18,0,0" TextWrapping="Wrap" Text="作者：" VerticalAlignment="Top"/>
+        <TextBox   BorderThickness="0"  IsReadOnly="True"  x:Name="zztext" HorizontalAlignment="Left" Margin="80,19,0,0" TextWrapping="Wrap" Text="张廷宇" VerticalAlignment="Top" Width="149" Height="18"/>
+        <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Left" Margin="21,46,0,0" TextWrapping="Wrap" Text="联系电话：" VerticalAlignment="Top"/>
+        <TextBox   BorderThickness="0"  IsReadOnly="True"  x:Name="phototext" HorizontalAlignment="Left" Margin="80,45,0,0" TextWrapping="Wrap" Text="15140996765" VerticalAlignment="Top" Width="151"/>
+        <TextBlock x:Name="textBlock_Copy3" HorizontalAlignment="Left" Margin="20,73,0,0" TextWrapping="Wrap" Text="联系QQ：" VerticalAlignment="Top"/>
+        <TextBox  BorderThickness="0"  IsReadOnly="True" x:Name="qqtext" HorizontalAlignment="Left" Margin="80,73,0,0" TextWrapping="Wrap" Text="297106637" VerticalAlignment="Top" Width="150"/>
+        <TextBlock x:Name="textBlock_Copy5" HorizontalAlignment="Left" Margin="21,125,0,0" TextWrapping="Wrap" Text="注：如有软件开发需求请联系作者" VerticalAlignment="Top" Width="234"/>
+        <TextBlock x:Name="textBlock_Copy6" HorizontalAlignment="Left" Margin="22,100,0,0" TextWrapping="Wrap" Text="地址：" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock_Copy7" HorizontalAlignment="Left" Margin="85,97,0,0" TextWrapping="Wrap" Text="辽宁省辽阳市白塔区" VerticalAlignment="Top"/>
+        <Label x:Name="label" Content="" Width="30" Height="30" HorizontalAlignment="Left" Margin="250,3,0,0" VerticalAlignment="Top" MouseDown="label_MouseDown"/>
+        <Button x:Name="buttons" Content="修改" HorizontalAlignment="Left" Margin="218,149,0,0" VerticalAlignment="Top" Width="45" Click="buttons_Click" RenderTransformOrigin="0.729,0.51" />
+
+    </Grid>
+</Window>

@@ -1,0 +1,75 @@
+﻿<Window x:Class="newWORD.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:newWORD"
+        mc:Ignorable="d"
+        Title="网站蚂蚁" Height="450" Width="825" WindowState="Maximized" Loaded="Window_Loaded" >
+    <Window.BorderBrush>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FF7F67EC" Offset="0"/>
+            <GradientStop Color="#FF1F60EA" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.BorderBrush>
+    <Grid >
+        <DockPanel>
+            <ToolBar DockPanel.Dock="Top" Height="30">
+                <Button Click="Button_Click_4">基础信息</Button>
+                <Button Click="Button_Click_5">保存信息</Button>
+                <Button Click="Button_Click_7">其他</Button>
+            </ToolBar>
+            <ToolBar DockPanel.Dock="Top" Height="30" >
+                <ComboBox Visibility="Collapsed" Name="CB_qy" Margin="15,0,15,0"  HorizontalAlignment="Center" VerticalAlignment="Center"></ComboBox>
+                <TextBlock Visibility="Collapsed" Margin="15,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14">搜索区域：</TextBlock>
+                <TextBox Visibility="Collapsed"  Name="SelectSTR"  Margin="2,0,15,0"  Width="200"></TextBox>
+                <Button Visibility="Collapsed"   Margin="1" Click="Button_Click_8">搜索</Button>
+                <Button Click="Button_Click" Margin="1"  Visibility="Collapsed" >确定</Button>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">当前仅显示</TextBlock>
+                <TextBox Width="150" Name="shaixuan"></TextBox>
+                <Button Margin="5,0,5,0"   Click="Button_Click_1" HorizontalAlignment="Center">首 页</Button>
+                <Button Margin="5,0,5,0" Click="Button_Click_3">上一页</Button>
+                <Button Margin="5,0,5,0" Click="Button_Click_2">下一页</Button>
+                <TextBlock  Margin="5,0,5,0" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Center">选择跳转页数</TextBlock>
+                <TextBox Name="Page_text" Width="30" Margin="5,0,5,0" BorderBrush="#FF2CAC07"></TextBox>
+                <Button Margin="5,0,5,0" Click="Button_Click_6" >GO</Button>
+                <TextBlock Name="page_text" Margin="11,0,11,0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14"></TextBlock>
+                <ProgressBar Visibility="Collapsed" Name="lobr" Width="200"></ProgressBar>
+                <TextBlock Name="lobr_text" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14"></TextBlock>
+                <TextBlock></TextBlock>
+            </ToolBar>
+           
+            <DockPanel DockPanel.Dock="Top" >
+                <DataGrid DockPanel.Dock="Top" Name="DataGrid" AutoGenerateColumns="False" IsReadOnly="True" FontSize="16" MouseDoubleClick="DataGrid_MouseDoubleClick">
+                    <DataGrid.Columns>
+
+                        <!--<DataGridTemplateColumn Header="图"  IsReadOnly="True">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Image    Source="{Binding Path=PHOTO,Converter={StaticResource dateConverter}, Mode=OneWay}"  />
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>-->
+                        
+                        <DataGridTextColumn Header="图" Binding="{Binding Image_str}" FontWeight="Bold" FontStyle="Italic"></DataGridTextColumn>                        
+                        <DataGridTextColumn Header="发布时间" Binding="{Binding datetime}"></DataGridTextColumn>
+                        <DataGridTextColumn Header="名称" Binding="{Binding TextName}"></DataGridTextColumn>
+                        <DataGridTextColumn Header="人员姓名" Binding="{Binding PersonName}"></DataGridTextColumn>
+                        <DataGridTextColumn Header="区域" Binding="{Binding Quyu}"></DataGridTextColumn>
+                        <DataGridTextColumn Header="来源" Visibility="Hidden" Binding="{Binding Laiyuan}"></DataGridTextColumn>
+
+                        <DataGridTextColumn Header="金额" Binding="{Binding SumMoney}" Foreground="#FFE2249D"></DataGridTextColumn>
+                        <DataGridTextColumn Header="单价" Binding="{Binding PingMoney}"></DataGridTextColumn>
+                        <DataGridTextColumn Header="平米" Binding="{Binding Allpm}"></DataGridTextColumn>
+                        <DataGridTextColumn Header="地址" Binding="{Binding Address}"></DataGridTextColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+                
+            </DockPanel>
+            <Frame Name="Frame1"></Frame>
+            <WebBrowser Name="Webbrowser1" Height="0" Width="0"></WebBrowser>
+            <WebBrowser Name="Webbrowser2" Height="0" Width="0"></WebBrowser>
+        </DockPanel>
+        
+    </Grid>
+</Window>

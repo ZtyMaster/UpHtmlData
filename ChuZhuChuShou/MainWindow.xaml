@@ -1,0 +1,87 @@
+﻿<Window x:Name="lo" x:Class="ChuZhuChuShou.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChuZhuChuShou"
+        mc:Ignorable="d"
+        Title="更新求租出租" Height="450" Width="800" Loaded="lo_Loaded">
+    <Grid>
+        <DockPanel>
+            
+            <ToolBar DockPanel.Dock="Top">
+                <Button Height="20" VerticalAlignment="Bottom" Click="Button_Click">更新求租信息</Button>
+                <TextBlock Width="20"></TextBlock>
+                <TextBlock>更新地址</TextBlock>
+                <ComboBox Name="ProtCmb" MinWidth="100" SelectionChanged="ProtCmb_SelectionChanged"></ComboBox>
+                <ComboBox Name="QiuZhuCombx1" SelectionChanged="QiuZhuCombx1_SelectionChanged"></ComboBox>
+                <TextBox Name="QiuZhuURL"  ></TextBox>
+               
+                <TextBlock></TextBlock>
+            </ToolBar>
+            <ToolBar DockPanel.Dock="Top">
+                <Button Click="Button_Click_1">更新出租信息</Button>
+                <TextBlock Width="20"></TextBlock>
+                <TextBlock>更新地址</TextBlock>
+                <ComboBox Name="protcb2" MinWidth="100" SelectionChanged="protcb2_SelectionChanged"></ComboBox>
+                <ComboBox Name="ftxCombx" SelectionChanged="ftxCombx_SelectionChanged"></ComboBox>
+                <TextBox Name="FTXtexturl" ></TextBox>
+              
+            </ToolBar>
+            <ToolBar  DockPanel.Dock="Top">
+                <Button Click="Button_Click_2">更新58出租信息</Button>
+                <TextBlock Width="20"></TextBlock>
+                <TextBlock>更新地址</TextBlock>
+                <ComboBox Name="up58name" MinWidth="100" SelectionChanged="up58name_SelectionChanged"></ComboBox>
+                <ComboBox Name="up58city" SelectionChanged="up58city_SelectionChanged"></ComboBox>
+                <TextBox Name="up58nameurl" ></TextBox>
+            </ToolBar>
+            <DockPanel DockPanel.Dock="Top">
+
+                <DockPanel DockPanel.Dock="Left" Width="400">
+                    <DockPanel   DockPanel.Dock="Top">
+                        <TextBlock DockPanel.Dock="Top">同城求租更新信息</TextBlock>
+                        <DockPanel >
+                            <TextBlock Name="upgengxin" DockPanel.Dock="Top"></TextBlock>
+                            <TextBlock Name="LISTbox" DockPanel.Dock="Top"></TextBlock>
+                            <TextBlock Name="SUMcount" DockPanel.Dock="Top"></TextBlock>
+                            <TextBlock Name="ReadCount" DockPanel.Dock="Top"></TextBlock>
+                        </DockPanel>
+                    </DockPanel>
+                    <DockPanel DockPanel.Dock="Top">
+                        <TextBlock DockPanel.Dock="Top">百姓求租更新信息</TextBlock>
+                        <DockPanel >
+                            <TextBlock Name="BXupgengxin" DockPanel.Dock="Top"></TextBlock>
+                            <TextBlock Name="BXLISTbox" DockPanel.Dock="Top"></TextBlock>
+                            <TextBlock Name="BXSUMcount" DockPanel.Dock="Top"></TextBlock>
+                            <TextBlock Name="BXReadCount" DockPanel.Dock="Top"></TextBlock>
+                        </DockPanel>
+                    </DockPanel>
+                    <DockPanel DockPanel.Dock="Top">
+                        <TextBlock DockPanel.Dock="Top">58出租更新信息</TextBlock>
+                        <DockPanel >
+                            <TextBlock Name="upgengxin58" DockPanel.Dock="Top"></TextBlock>
+                            <TextBlock Name="LISTbox58" DockPanel.Dock="Top"></TextBlock>
+                            <TextBlock Name="SUMcount58" DockPanel.Dock="Top"></TextBlock>
+                            <TextBlock Name="ReadCount58" DockPanel.Dock="Top"></TextBlock>
+                            <TextBlock Name="ADDC58" DockPanel.Dock="Top"></TextBlock>
+                            <TextBlock Name="ltextd58" DockPanel.Dock="Top"></TextBlock>
+                        </DockPanel>
+                    </DockPanel>
+                </DockPanel>
+                <DockPanel>
+                    <TextBlock Name="FtxiaZT" DockPanel.Dock="Top"></TextBlock>
+                    <TextBlock Name="ltextd" DockPanel.Dock="Top"></TextBlock>
+                    <TextBlock Name="ADDC" DockPanel.Dock="Top"></TextBlock>
+                    <TextBlock Name="uPCount" DockPanel.Dock="Top"></TextBlock>
+                   
+                </DockPanel>
+            </DockPanel>
+           
+    
+            <DockPanel>
+                
+            </DockPanel>
+        </DockPanel>
+    </Grid>
+</Window>
